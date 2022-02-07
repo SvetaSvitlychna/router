@@ -1,0 +1,25 @@
+This is simple Router
+
+class Router  has one private param $request and
+consist of the following functions:
+
+1) function __construct gets param string $request.
+2) function run gets param $routes (array of routes). The function checks if in the array $routes
+    the requested uri ($request).
+
+For security all entries to the site has been made through public directory.
+and in the public directive here must be presented two files:
+- .htaccess  (for Apache Server)
+- index.php
+
+file index.php has connection to the class Router, connection to the file routes which is presented as  variable $routes,
+getting uri  which is presented as  variable $request.
+making a new object  which takes param $request.  this new object presents as variable $router.
+calls the function run of class Router and gives there param $routes (list of routes).
+
+
+
+
+
+
+
